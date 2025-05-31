@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", serif;
+    background-color: #5f65d1;
+    background: linear-gradient(180deg, rgba(85, 91, 206, 1) 0%, rgb(0, 0, 0) 85%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 1024px;
+    overflow-x: auto;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+footer {
+    background-color: #2d1c8e;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.about-website-icon {
+    font-size: 40px;
+    cursor: pointer;
+    color: #fff;
+    /* Optional: change to desired color */
+}
+
+.about-website-icon:hover {
+    color: #000;
+}
+
+.about-text {
+    text-align: justify;
+    text-indent: 2em;
+}
+
+#student-table {
+    width: 400px;
+    /* or use a percentage like 80% */
+    table-layout: fixed;
+}
+
+.header-nav-ul-items {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 64px;
+    padding-top: 32px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-bottom: 1px solid #9d8d8d;
+    list-style: none;
+    color: #FFF;
+    justify-content: space-evenly;
+
+}
+
+.add-student-button {
+    background-color: rgb(45, 28, 142);
+    color: white;
+    border: none;
+    padding: 4px 46px 4px 46px;
+    border-radius: 16px 16px 16px 16px;
+    font-size: 26px;
+    font-weight: 400;
+    font-family: "Poppins", serif;
+    /* Set a fixed width */
+    width: 300px;
+    height: 45px;
+
+}
+
+.add-student-button:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.student-pagination-list-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* centers child elements horizontally */
+    justify-content: center;
+    /* optional: centers vertically if you also set min-height */
+    margin-top: 2rem;
+    margin-bottom: 50px;
+}
+
+.clickable-icon {
+    cursor: pointer;
+}
+
+.footer-nav-ul-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: white;
+    justify-content: space-evenly;
+}
+
+
+/* For Add Student form validation */
+.form-control.valid {
+    border-color: green;
+}
+
+.form-control.invalid {
+    border-color: red;
+}
+
+/* End - For Add Student form validation */
+
+
+
+/* For Modal Popup - Error message, fix form submission errors. */
+.custom-error-modal {
+    /* Light red/pink to indicate error */
+    border: 2px solid #cc0000;
+    width: 510px;
+    /* Dark red border */
+    box-shadow: 0 0 30px rgba(204, 0, 0, 0.7);
+    /* Strong red glow */
+}
+
+.custom-error-modal .modal-header,
+.custom-error-modal .modal-footer {
+    /* background-color: #ffcccc; */
+    border-bottom: 1px solid #cc0000;
+}
+
+.custom-error-modal .modal-title {
+    color: #990000;
+    font-weight: bold;
+}
+
+/* End - For Modal Popup - Error message, fix form submission errors. */
+
+/* Mobile-Friendly Grid */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Switch to single column */
+        grid-template-rows: auto;
+    }
+}
