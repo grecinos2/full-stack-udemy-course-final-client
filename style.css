@@ -165,6 +165,12 @@ footer {
 
 /* End - For Modal Popup - Error message, fix form submission errors. */
 
+
+.toast.custom-toast-width {
+    width: 380px;
+}
+
+
 /* Mobile-Friendly Grid */
 @media (max-width: 1024px) {
     .grid-container {
