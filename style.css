@@ -115,20 +115,6 @@ footer {
     margin-bottom: 50px;
 }
 
-.clickable-icon {
-    cursor: pointer;
-}
-
-.footer-nav-ul-items {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    color: white;
-    justify-content: space-evenly;
-}
-
-
 /* For Add Student form validation */
 .form-control.valid {
     border-color: green;
@@ -139,7 +125,6 @@ footer {
 }
 
 /* End - For Add Student form validation */
-
 
 
 /* For Modal Popup - Error message, fix form submission errors. */
@@ -168,14 +153,4 @@ footer {
 
 .toast.custom-toast-width {
     width: 380px;
-}
-
-
-/* Mobile-Friendly Grid */
-@media (max-width: 1024px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-        /* Switch to single column */
-        grid-template-rows: auto;
-    }
 }
